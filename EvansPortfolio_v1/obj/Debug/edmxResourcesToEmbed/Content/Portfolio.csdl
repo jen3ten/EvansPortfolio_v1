@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PortfolioDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Feature">
+    <Key>
+      <PropertyRef Name="FeatureID" />
+    </Key>
+    <Property Name="FeatureID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_Features_Projects" FromRole="Features" ToRole="Projects" />
+  </EntityType>
+  <EntityType Name="Project">
+    <Key>
+      <PropertyRef Name="ProjectID" />
+    </Key>
+    <Property Name="ProjectID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GitLink" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="HardDrivePath" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="VideoLink" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Features" Relationship="Self.FK_Features_Projects" FromRole="Projects" ToRole="Features" />
+    <NavigationProperty Name="Screenshots" Relationship="Self.FK_Screenshots_Projects" FromRole="Projects" ToRole="Screenshots" />
+  </EntityType>
+  <EntityType Name="Screenshot">
+    <Key>
+      <PropertyRef Name="ScreenshotID" />
+    </Key>
+    <Property Name="ScreenshotID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ImagePath" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_Screenshots_Projects" FromRole="Screenshots" ToRole="Projects" />
+  </EntityType>
+  <Association Name="FK_Features_Projects">
+    <End Role="Projects" Type="Self.Project" Multiplicity="1" />
+    <End Role="Features" Type="Self.Feature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ProjectID" />
+      </Principal>
+      <Dependent Role="Features">
+        <PropertyRef Name="ProjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Screenshots_Projects">
+    <End Role="Projects" Type="Self.Project" Multiplicity="1" />
+    <End Role="Screenshots" Type="Self.Screenshot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ProjectID" />
+      </Principal>
+      <Dependent Role="Screenshots">
+        <PropertyRef Name="ProjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PortfolioDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Features" EntityType="Self.Feature" />
+    <EntitySet Name="Projects" EntityType="Self.Project" />
+    <EntitySet Name="Screenshots" EntityType="Self.Screenshot" />
+    <AssociationSet Name="FK_Features_Projects" Association="Self.FK_Features_Projects">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="Features" EntitySet="Features" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Screenshots_Projects" Association="Self.FK_Screenshots_Projects">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="Screenshots" EntitySet="Screenshots" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PortfolioDBModelStoreContainer" CdmEntityContainer="PortfolioDBEntities">
+    <EntitySetMapping Name="Features">
+      <EntityTypeMapping TypeName="PortfolioDBModel.Feature">
+        <MappingFragment StoreEntitySet="Features">
+          <ScalarProperty Name="FeatureID" ColumnName="FeatureID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="PortfolioDBModel.Project">
+        <MappingFragment StoreEntitySet="Projects">
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="GitLink" ColumnName="GitLink" />
+          <ScalarProperty Name="HardDrivePath" ColumnName="HardDrivePath" />
+          <ScalarProperty Name="VideoLink" ColumnName="VideoLink" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Screenshots">
+      <EntityTypeMapping TypeName="PortfolioDBModel.Screenshot">
+        <MappingFragment StoreEntitySet="Screenshots">
+          <ScalarProperty Name="ScreenshotID" ColumnName="ScreenshotID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

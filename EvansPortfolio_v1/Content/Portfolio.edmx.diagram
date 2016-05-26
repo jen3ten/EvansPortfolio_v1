@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d2ca7a4090054e20bae872a8e8f17819" Name="Diagram1">
+        <EntityTypeShape EntityType="PortfolioDBModel.Feature" Width="1.5" PointX="5.125" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioDBModel.Project" Width="1.5" PointX="1.125" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PortfolioDBModel.Screenshot" Width="1.5" PointX="5" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="PortfolioDBModel.FK_Features_Projects" ManuallyRouted="false" />
+        <AssociationConnector Association="PortfolioDBModel.FK_Screenshots_Projects" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
