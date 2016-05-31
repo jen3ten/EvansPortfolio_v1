@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EvansPortfolio_v1.Content;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,13 @@ namespace EvansPortfolio_v1.Controllers
 {
     public class HomeController : Controller
     {
+        private PortfolioDBEntities db = new PortfolioDBEntities();
+
         public ActionResult Index()
         {
-            return View();
+            //return View();
+            return View(db.Projects.ToList());
+
         }
 
         public ActionResult About()

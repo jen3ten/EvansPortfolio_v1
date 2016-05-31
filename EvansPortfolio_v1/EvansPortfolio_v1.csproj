@@ -211,6 +211,14 @@
     <Content Include="Images\Bank_Account\bank account.jpg" />
     <Content Include="Images\Brighton\brighton.jpg" />
     <Content Include="Images\Date_Night\date night.jpg" />
+    <Content Include="Images\Dividers\dry ground cropped.jpg" />
+    <Content Include="Images\Dividers\dry ground.jpg" />
+    <Content Include="Images\Dividers\leaf texture cropped.jpg" />
+    <Content Include="Images\Dividers\leaf texture.jpg" />
+    <Content Include="Images\Dividers\water reflection cropped.jpg" />
+    <Content Include="Images\Dividers\water reflection.jpg" />
+    <Content Include="Images\Dividers\wood texture cropped.jpg" />
+    <Content Include="Images\Dividers\wood texture.jpg" />
     <Content Include="Images\Resource_Library\library.jpg" />
     <Content Include="Images\Resource_Library\resource code 1.jpg" />
     <Content Include="Images\Resource_Library\Resource screen shot 1.jpg" />

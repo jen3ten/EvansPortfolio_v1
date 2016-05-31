@@ -1,19 +1,24 @@
-﻿@{
+﻿@model IEnumerable<EvansPortfolio_v1.Content.Project>
+
+@{
     ViewBag.Title = "Home Page";
 }
 
-<div class="section">
-    <h5>Section 1</h5>
-    <p>Stuff</p>
-</div>
+@*<div class="section">*@
+    @*<h5>Section 1</h5>*@
+    @*<p>Stuff</p>*@
+    <img class="responsive-img" src="~/Images/Dividers/water reflection cropped.jpg" alt="Water Reflection" style="" />
+@*</div>*@
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>SUMMARY</h1>
+    <p class="lead">I am a C#/.Net full stack software developer....</p>
+    @*<p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
 </div>
 
-<div class="row">
+<img class="responsive-img" src="~/Images/Dividers/dry ground cropped.jpg" alt="Water Reflection" style="" />
+
+@*<div class="row">
     <div class="col-md-4">
         <h2>Getting started</h2>
         <p>
@@ -33,4 +38,31 @@
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
+</div>*@
+
+<div class="row" id="project-section">
+@foreach (var item in Model)
+{
+    <div class="col s12 m4">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="~/Images/Resource_Library/library.jpg">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">@Html.DisplayFor(modelItem => item.Name)<i class="material-icons right">more_vert</i></span>
+                @*<p><a href="#">This is a link</a></p>*@
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">@Html.DisplayFor(modelItem => item.Name)<i class="material-icons right">close</i></span>
+                <p>@Html.DisplayFor(modelItem => item.Description)</p>
+                <p>CSS</p>
+                <p>HTML</p>
+                <p>and lots of other stuff</p>
+                <p><a href="~/First/#">This is a link, go to first page</a></p>
+            </div>
+        </div>
+    </div>
+}
 </div>
+
+    <img class="responsive-img" src="~/Images/Dividers/leaf texture cropped.jpg" alt="Water Reflection" style="" />
