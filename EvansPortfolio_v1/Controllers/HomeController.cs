@@ -13,6 +13,7 @@ namespace EvansPortfolio_v1.Controllers
 
         public ActionResult Index()
         {
+            db.Features.ToList();
             //return View();
             return View(db.Projects.ToList());
 
