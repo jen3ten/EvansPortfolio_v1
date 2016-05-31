@@ -208,12 +208,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\bank account.jpg" />
-    <Content Include="Images\brighton.jpg" />
-    <Content Include="Images\library.jpg" />
-    <Content Include="Images\t%40b camper.jpg" />
-    <Content Include="Images\tv shows.jpg" />
-    <Content Include="Images\wardrobe.jpg" />
+    <Content Include="Images\Bank_Account\bank account.jpg" />
+    <Content Include="Images\Brighton\brighton.jpg" />
+    <Content Include="Images\Date_Night\date night.jpg" />
+    <Content Include="Images\Resource_Library\library.jpg" />
+    <Content Include="Images\Resource_Library\resource code 1.jpg" />
+    <Content Include="Images\Resource_Library\Resource screen shot 1.jpg" />
+    <Content Include="Images\Resource_Library\Resource screen shot 2.jpg" />
+    <Content Include="Images\Resource_Library\Resource screen shot 3.jpg" />
+    <Content Include="Images\Resource_Library\Resource screen shot 4.jpg" />
+    <Content Include="Images\TAB_Camper\t%40b camper.jpg" />
+    <Content Include="Images\Network_TV_Shows\tv shows.jpg" />
+    <Content Include="Images\Wardrobe\wardrobe.jpg" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -272,6 +278,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\Job_Program\" />
+    <Folder Include="Images\Prev_Wage\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
