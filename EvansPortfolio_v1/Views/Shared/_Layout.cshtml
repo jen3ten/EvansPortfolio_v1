@@ -37,30 +37,37 @@
             </div>
         </div>
     </div>*@
-
+<div class="navbar-fixed">
     <nav>   <!--Navigation bar using Materialize-->
         <div class="nav-wrapper teal">
-            <a href="~/Home/#" class="brand-logo center">Jennifer Evans</a>
+            <a href="~/Home/#" class="brand-logo center light">JENNIFER EVANS</a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li><a href="~/Home/About">About</a></li>
                 <li><a href="~/Home/Contact">Contact Info</a></li>
             </ul>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <!--Comment out the links to Admin functions when viewing webpage-->
+                <li><a href="~/Projects/#">Project Index</a></li>
+                <li><a href="~/Features/#">Features Index</a></li>
+                <li><a href="~/Screenshots/#">Screenshot Index</a></li>
+
                 <li><a href="~/Home/Index/#project-section">Projects</a></li>
             </ul>
 
         </div>
     </nav>
+</div>
 
     <!--Floating Click to Toggle button fixed at bottom of screen using Materialize-->
     <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
         <a class="btn-floating btn-large blue-grey">
-            <i class="material-icons">menu</i>
+            @*<i class="material-icons">menu</i>  Use this for hamburger icon *@
+            <i class="fa fa-user" aria-hidden="true"></i>
         </a>
         <ul>
-            <li><a class="btn-floating blue-grey lighten-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jenevans3ten" target="_blank" class="btn-floating blue-grey lighten-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
             <li><a class="btn-floating blue-grey lighten-1"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-            <li><a class="btn-floating blue-grey darken-1"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/jen3ten" target="_blank" class="btn-floating blue-grey darken-1"><i class="fa fa-github" aria-hidden="true"></i></a></li>
             <li><a class="btn-floating blue-grey darken-2"><i class="fa fa-mobile" aria-hidden="true"></i>></a></li>
 
 
@@ -71,7 +78,7 @@
         </ul>
     </div>
 
-    <div class="container body-content">
+    <div class="body-content">
         @RenderBody()
         <hr />
         <footer>

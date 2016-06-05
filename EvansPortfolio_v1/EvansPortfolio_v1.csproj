@@ -208,15 +208,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\1\card-image-1.jpg" />
-    <Content Include="Images\1\screenshots\resource code 1.jpg" />
-    <Content Include="Images\1\screenshots\Resource screen shot 1.jpg" />
-    <Content Include="Images\1\screenshots\Resource screen shot 2.jpg" />
-    <Content Include="Images\1\screenshots\Resource screen shot 3.jpg" />
-    <Content Include="Images\1\screenshots\Resource screen shot 4.jpg" />
-    <Content Include="Images\2\card-image-2.jpg" />
-    <Content Include="Images\3\card-image-3.jpg" />
     <Content Include="Images\Bank_Account\bank_account_index.jpg" />
+    <Content Include="Images\Bank_Account\screenshots\bank_code_1.jpg" />
+    <Content Include="Images\Bank_Account\screenshots\bank_screen_1.jpg" />
+    <Content Include="Images\Bank_Account\screenshots\bank_screen_2.jpg" />
+    <Content Include="Images\Bank_Account\screenshots\bank_screen_3.jpg" />
+    <Content Include="Images\Bank_Account\screenshots\bank_screen_4.jpg" />
     <Content Include="Images\Brighton\brighton.jpg" />
     <Content Include="Images\Date_Night\date_night_index.jpg" />
     <Content Include="Images\Dividers\dry ground cropped.jpg" />
@@ -228,13 +225,17 @@
     <Content Include="Images\Dividers\wood texture cropped.jpg" />
     <Content Include="Images\Dividers\wood texture.jpg" />
     <Content Include="Images\Resource_Library\library_index.jpg" />
-    <Content Include="Images\Resource_Library\screenshots\resource_code_1.jpg" />
     <Content Include="Images\Resource_Library\screenshots\resource_1.jpg" />
     <Content Include="Images\Resource_Library\screenshots\resource_2.jpg" />
     <Content Include="Images\Resource_Library\screenshots\resource_3.jpg" />
     <Content Include="Images\Resource_Library\screenshots\resource_4.jpg" />
+    <Content Include="Images\Resource_Library\screenshots\resource_code_1.jpg" />
     <Content Include="Images\TAB_Camper\camper_index.jpg" />
     <Content Include="Images\Network_TV_Shows\tv_shows_index.jpg" />
+    <Content Include="Images\TAB_Camper\screenshots\tab_code_1.jpg" />
+    <Content Include="Images\TAB_Camper\screenshots\tab_page_1.jpg" />
+    <Content Include="Images\TAB_Camper\screenshots\tab_page_2.jpg" />
+    <Content Include="Images\TAB_Camper\screenshots\tab_page_3.jpg" />
     <Content Include="Images\Wardrobe\wardrobe_index.jpg" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
@@ -294,13 +295,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\Bank_Account\screenshots\" />
     <Folder Include="Images\Brighton\screenshots\" />
     <Folder Include="Images\Date_Night\screenshots\" />
     <Folder Include="Images\Job_Program\" />
     <Folder Include="Images\Network_TV_Shows\screenshots\" />
     <Folder Include="Images\Prev_Wage\" />
-    <Folder Include="Images\TAB_Camper\screenshots\" />
     <Folder Include="Images\Wardrobe\screenshots\" />
     <Folder Include="Models\" />
   </ItemGroup>

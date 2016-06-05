@@ -9,6 +9,14 @@
 <div>
     <h4>Project</h4>
     <hr />
+    @*<div class="carousel">
+        <a class="carousel-item" href="#one!"><img src=@Model.Screenshots.ElementAt(0)></a>
+        <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
+        <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
+        <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
+        <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
+    </div>*@
+
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.Name)
@@ -50,6 +58,32 @@
             @Html.DisplayFor(model => model.VideoLink)
         </dd>
 
+
+        @foreach (var pic in Model.Screenshots)
+        {
+            <dd>
+                <div class="row">
+                    @*<div class="col s12 m7">*@
+                        @*<div class="card large">*@
+                            @*<span>@pic.Name</span>*@
+                            @*<div class="card-image hoverable responsive-img">*@
+                                <img src=@pic.ImagePath class="col s12 m7 materialboxed" width="650" data-caption=@pic.Name>
+                                @*<img src="images/sample-1.jpg">*@
+                            @*</div>*@
+                            @*<div class="card-content">
+                                <p>
+                                    I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>*@
+                        @*</div>*@
+                    @*</div>*@
+                </div>
+            </dd>
+        }
     </dl>
 </div>
 <p>
