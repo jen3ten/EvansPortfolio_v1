@@ -232,6 +232,16 @@
     <Content Include="Images\Dividers\water reflection.jpg" />
     <Content Include="Images\Dividers\wood texture cropped.jpg" />
     <Content Include="Images\Dividers\wood texture.jpg" />
+    <Content Include="Images\Logos\CCBDD_logo.jpg" />
+    <Content Include="Images\Logos\CWRU_logo.png" />
+    <Content Include="Images\Logos\FES_logo.jpg" />
+    <Content Include="Images\Logos\LMM_logo.png" />
+    <Content Include="Images\Logos\MS_logo.jpeg" />
+    <Content Include="Images\Logos\thinkbox_image.jpg" />
+    <Content Include="Images\Logos\WCCI_logo2.jpg" />
+    <Content Include="Images\Logos\WCCI_logo3.jpg" />
+    <Content Include="Images\Logos\WSU_logo.jpg" />
+    <Content Include="Images\Logos\WSU_logo2.jpg" />
     <Content Include="Images\Network_TV_Shows\screenshots\tv_1.jpg" />
     <Content Include="Images\Network_TV_Shows\screenshots\tv_2.jpg" />
     <Content Include="Images\Network_TV_Shows\screenshots\tv_3.jpg" />
