@@ -4,89 +4,30 @@
     ViewBag.Title = "Project Details";
 }
 
-<h3>@Html.DisplayFor(model => model.Name) Details</h3>
-
-<div>
-    @*<h4>Project</h4>*@
-    <hr />
-    @*<div class="carousel">
-        <a class="carousel-item" href="#one!"><img src=@Model.Screenshots.ElementAt(0)></a>
-        <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
-        <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
-        <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
-        <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
-    </div>*@
-
-    <dl class="dl-horizontal">
-        @*<dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>*@
-
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.GitLink)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.GitLink)
-        </dd>
-
-        @*<dt>
-            @Html.DisplayNameFor(model => model.HardDrivePath)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.HardDrivePath)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.VideoLink)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.VideoLink)
-        </dd>*@
-
-
-        @foreach (var pic in Model.Screenshots)
-        {
-            <dd>
-                <div class="row">
-                    @*<div class="col s12 m7">*@
-                        @*<div class="card large">*@
-                            @*<span>@pic.Name</span>*@
-                            @*<div class="card-image hoverable responsive-img">*@
-                                <img src=@pic.ImagePath class="col s12 m7 materialboxed" width="650" data-caption=@pic.Name>
-                                @*<img src="images/sample-1.jpg">*@
-                            @*</div>*@
-                            @*<div class="card-content">
-                                <p>
-                                    I am a very simple card. I am good at containing small bits of information.
-                                    I am convenient because I require little markup to use effectively.
-                                </p>
-                            </div>
-                            <div class="card-action">
-                                <a href="#">This is a link</a>
-                            </div>*@
-                        @*</div>*@
-                    @*</div>*@
-                </div>
-            </dd>
-        }
-    </dl>
+<div style="margin-top:10px; margin-left:5%">
+    <p><a class="btn-floating btn-large waves-effect waves-light teal lighten-3" href="~/Home/Index/#project-section"><i class="fa fa-home" aria-hidden="true"></i></a> Click to Return To Projects</p>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ProjectID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+<div class="jumbotron" style="margin-left:5%; margin-right:5%">
+    <h2>@Html.DisplayFor(model => model.Name) Details</h2>
+    <hr />
+
+    <h5>@Html.DisplayFor(model => model.Description)</h5>
+    <p><a href=@Url.Content(Model.GitLink) target="_blank" class="btn-floating blue-grey darken-1"><i class="fa fa-github" aria-hidden="true"></i></a> Click to go to Project on GitHub</p>
+
+    <div class="row">
+    @foreach (var pic in Model.Screenshots)
+    {
+        <div class="col s12 m4 l3">
+            <div class="card small">
+                <div class="card-image">
+                    <img src=@pic.ImagePath class="materialboxed">
+                <div class="card-title">
+                </div>
+                    <span class="grey-text text-darken-4">@Html.DisplayFor(modelItem => pic.Name)</span>
+                </div>
+            </div>
+        </div>
+    }
+    </div>
+</div>
