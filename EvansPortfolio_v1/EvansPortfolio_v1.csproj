@@ -215,7 +215,15 @@
     <Content Include="Images\Bank_Account\screenshots\bank_screen_3.jpg" />
     <Content Include="Images\Bank_Account\screenshots\bank_screen_4.jpg" />
     <Content Include="Images\Brighton\brighton_index.jpg" />
+    <Content Include="Images\Brighton\screenshots\brighton_1.jpg" />
+    <Content Include="Images\Brighton\screenshots\brighton_code_1.jpg" />
     <Content Include="Images\Date_Night\date_index.jpg" />
+    <Content Include="Images\Date_Night\screenshots\date_code_1.jpg" />
+    <Content Include="Images\Date_Night\screenshots\date_night_1.jpg" />
+    <Content Include="Images\Date_Night\screenshots\date_night_2.jpg" />
+    <Content Include="Images\Date_Night\screenshots\date_night_3.jpg" />
+    <Content Include="Images\Date_Night\screenshots\date_night_4.jpg" />
+    <Content Include="Images\Date_Night\screenshots\date_night_5.jpg" />
     <Content Include="Images\Dividers\dry ground cropped.jpg" />
     <Content Include="Images\Dividers\dry ground.jpg" />
     <Content Include="Images\Dividers\leaf texture cropped.jpg" />
@@ -224,6 +232,11 @@
     <Content Include="Images\Dividers\water reflection.jpg" />
     <Content Include="Images\Dividers\wood texture cropped.jpg" />
     <Content Include="Images\Dividers\wood texture.jpg" />
+    <Content Include="Images\Network_TV_Shows\screenshots\tv_1.jpg" />
+    <Content Include="Images\Network_TV_Shows\screenshots\tv_2.jpg" />
+    <Content Include="Images\Network_TV_Shows\screenshots\tv_3.jpg" />
+    <Content Include="Images\Network_TV_Shows\screenshots\tv_4.jpg" />
+    <Content Include="Images\Network_TV_Shows\screenshots\tv_code_1.jpg" />
     <Content Include="Images\Network_TV_Shows\tv_index.jpg" />
     <Content Include="Images\Resource_Library\library_index.jpg" />
     <Content Include="Images\Resource_Library\screenshots\resource1.jpg" />
@@ -237,6 +250,11 @@
     <Content Include="Images\TAB_Camper\screenshots\tab_page_3.jpg" />
     <Content Include="Images\TAB_Camper\tab_camper_index2.jpg" />
     <Content Include="Images\Wardrobe\closet_index.jpg" />
+    <Content Include="Images\Wardrobe\screenshots\wardrobe_1.jpg" />
+    <Content Include="Images\Wardrobe\screenshots\wardrobe_2.jpg" />
+    <Content Include="Images\Wardrobe\screenshots\wardrobe_3.jpg" />
+    <Content Include="Images\Wardrobe\screenshots\wardrobe_4.jpg" />
+    <Content Include="Images\Wardrobe\screenshots\wardrobe_code_1.jpg" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -295,10 +313,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\Brighton\screenshots\" />
-    <Folder Include="Images\Date_Night\screenshots\" />
-    <Folder Include="Images\Network_TV_Shows\screenshots\" />
-    <Folder Include="Images\Wardrobe\screenshots\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
