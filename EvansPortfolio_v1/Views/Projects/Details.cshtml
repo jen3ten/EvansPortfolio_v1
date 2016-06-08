@@ -19,11 +19,11 @@
     @foreach (var pic in Model.Screenshots)
     {
         <div class="col s12 m4 l3">
-            <div class="card small">
+            <div class="card">
                 <div class="card-image">
                     <img src=@pic.ImagePath class="materialboxed">
-                <div class="card-title">
                 </div>
+                <div class="card-title">
                     <span class="grey-text text-darken-4">@Html.DisplayFor(modelItem => pic.Name)</span>
                 </div>
             </div>
@@ -31,3 +31,5 @@
     }
     </div>
 </div>
+
+
