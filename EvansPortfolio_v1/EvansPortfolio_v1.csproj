@@ -224,12 +224,17 @@
     <Content Include="Images\Date_Night\screenshots\date_night_3.jpg" />
     <Content Include="Images\Date_Night\screenshots\date_night_4.jpg" />
     <Content Include="Images\Date_Night\screenshots\date_night_5.jpg" />
+    <Content Include="Images\Dividers\dry ground cropped 2.jpg" />
     <Content Include="Images\Dividers\dry ground cropped.jpg" />
     <Content Include="Images\Dividers\dry ground.jpg" />
+    <Content Include="Images\Dividers\leaf texture cropped 2.jpg" />
     <Content Include="Images\Dividers\leaf texture cropped.jpg" />
     <Content Include="Images\Dividers\leaf texture.jpg" />
+    <Content Include="Images\Dividers\water reflection cropped 2.jpg" />
+    <Content Include="Images\Dividers\water reflection cropped 3.jpg" />
     <Content Include="Images\Dividers\water reflection cropped.jpg" />
     <Content Include="Images\Dividers\water reflection.jpg" />
+    <Content Include="Images\Dividers\wood texture cropped 2.jpg" />
     <Content Include="Images\Dividers\wood texture cropped.jpg" />
     <Content Include="Images\Dividers\wood texture.jpg" />
     <Content Include="Images\Logos\CCBDD_logo.jpg" />
